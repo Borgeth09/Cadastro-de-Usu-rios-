@@ -1,0 +1,95 @@
+:root{
+    --cor-principal: #0400ff;
+    --cor-secundaria: #0b054d;
+    --cor-constraste: #3186d2;
+    --cor-constraste2: #0b74ca;
+    --cor-constraste3: #0a3ac7;
+}
+  
+
+.container{
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    flex-direction:column ;
+}
+
+h1{
+    color: #ffffff;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column; /* para deixar um de baixo do outro */
+    gap: 30px; /* espaçamento entre os elementos */
+    padding: 30px; /* espaçamento interno */
+    border-radius: 10px; /* bordas arredondadas */
+    background-color:var(--cor-secundaria);
+    max-width: 50%; /* largura máxima comparando o tamanho da tela*/
+    width: 400px; /* largura do formulário */
+    margin-bottom: 20px; /* margem inferior */
+
+    & button {
+        border-radius: 30px;
+        background-color: var(--cor-principal);
+        color: #ffffff;
+        height: 40px ; /* altura do botão */
+        border: none; /* sem borda */
+        font-weight: bold; /* negrito */
+        cursor: pointer; /* cursor de mãozinha */
+        
+
+    }
+
+    & button:hover {
+        opacity: 0.8; /* opacidade */
+    }
+
+    & input {
+        border: 1px solid var(--cor-constraste2);
+        border-radius: 30px;
+        height: 40px;
+        /* background-color: var(--cor-constraste3); */
+        color: var(--cor-secundaria);
+        font-size: 1rem;
+        padding-left: 10px; /* espaçamento interno */
+        outline: none; /* sem contorno */
+    }
+
+    & input:focus {
+        border: 3px solid var(--cor-constraste2);
+    }
+}
+
+.card{
+    display: flex;
+    justify-content: space-between; /* alinhamento, ele separa os itens e coloca cada um para o seu lado */
+    background-color: var(--cor-secundaria);
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 10px;
+
+    & p{
+        color: #fff;
+        font-weight: bold; 
+
+    }
+
+    & span{
+        
+        font-weight: normal;
+    }
+
+    & button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    & button:hover{
+       opacity: 0.6;
+    }
+}

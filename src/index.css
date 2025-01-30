@@ -1,0 +1,21 @@
+:root{
+  --cor-principal: #0400ff;
+    --cor-secundaria: #0b054d;
+    --cor-constraste: #3186d2;
+    --cor-constraste2: #0b74ca;
+    --cor-constraste3: #0a3ac7;
+}
+
+*{ /*seletor universal    */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(180deg,var(--cor-principal)  0%, var(--cor-secundaria) 100%);
+  
+}
